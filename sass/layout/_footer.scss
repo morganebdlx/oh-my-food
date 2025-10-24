@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as *;
+@use '../base/typography' as *;
+
+footer {
+  background-color: $grey;
+  color: white;
+  padding: 22px 25px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+footer h2 {
+  font-family: $font-secondary;
+  font-size: $h2-size;
+  margin-bottom: 14px;
+}
+
+footer a i {
+  margin-right: 20px;
+  width: 11px;
+  text-align: center;
+}

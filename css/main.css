@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 113px;
+  background-color: white;
+}
+
+.logo {
+  height: 63px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  z-index: 1;
+}
+
+.logo img {
+  width: 162px;
+  height: 30px;
+  margin: 14px;
+}
+
+.localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  color: #353535;
+  background-color: #EAEAEA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+.localisation p {
+  font-weight: 500;
+}
+
+.localisation i {
+  margin-right: 15px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 22px 25px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+footer a i {
+  margin-right: 20px;
+  width: 11px;
+  text-align: center;
+}
+
+.restaurants_cards {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  margin: 10px 15px;
+  position: relative;
+}
+
+.restaurants_cards img {
+  width: 100%;
+  height: 231px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.new-restaurant {
+  position: absolute;
+  z-index: 1;
+  width: 80px;
+  height: 29px;
+  font-weight: 500;
+  background-color: #99E2D0;
+  color: #008766;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.restaurants_cards i {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.restaurants_cards h3 {
+  font-weight: 700;
+  margin: 20px 0 0 20px;
+  font-size: 18px;
+}
+
+.restaurants_cards p {
+  font-weight: 300;
+  margin: 0 0 20px 20px;
+  font-size: 18px;
+}
+
+button {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  border: none;
+  border-radius: 25px;
+  width: 218px;
+  height: 50px;
+  background: linear-gradient(180deg, #FF79DA -11.44%, #9356DC 123.93%);
+  color: white;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.operation_cards {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 20px;
+  width: 322px;
+  height: 72px;
+  margin: 10px 20px 10px 30px;
+  background-color: #F6F6F6;
+  padding-left: 8px;
+  position: relative;
+}
+
+.operation_cards i {
+  font-size: 20px;
+  color: #7E7E7E;
+  margin: 20px;
+}
+
+.operation_cards h2 {
+  display: inline;
+  font-weight: 500;
+}
+
+.operation-num {
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  background-color: #9356DC;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  top: 20px;
+  left: -12px;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 30px 20px 50px 20px;
+}
+
+.intro-section p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #353535;
+}
+
+.operation-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.operation-section h2 {
+  text-align: left;
+  margin: 50px 0 30px 20px;
+  font-size: 24px;
+}
+
+.restaurants-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  padding-bottom: 50px;
+}
+
+.restaurants-section h2 {
+  text-align: left;
+  margin: 50px 0 0 20px;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=main.css.map */

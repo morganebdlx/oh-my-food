@@ -1,9 +1,15 @@
 // base
-@import 'base/typography';
+@use 'base/typography';
 
 // abstracts
-@import 'abstracts/variables';
+@use 'abstracts/variables';
 
 // layout
-@import 'layout/header';
-@import 'layout/footer';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/home';
+
+// components
+@use 'components/button';
+@use 'components/restaurants_cards';
+@use 'components/operation_cards';

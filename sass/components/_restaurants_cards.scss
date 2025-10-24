@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as *;
+@use '../base/typography' as *;
+
+.restaurants_cards{
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  margin: 10px 15px;
+  position: relative;
+}
+
+.restaurants_cards img{
+  width: 100%;
+  height: 231px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.new-restaurant {
+  position: absolute;
+  z-index: 1;
+  width: 80px;
+  height: 29px;
+  font-weight: 500;
+  background-color: $green-bg;
+  color: $green-font;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.restaurants_cards i {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.restaurants_cards h3 {
+  font-weight: 700;
+  margin: 20px 0 0 20px;
+  font-size: 18px;
+}
+
+.restaurants_cards p {
+  font-weight: 300;
+  margin: 0 0 20px 20px;
+  font-size: 18px;
+}

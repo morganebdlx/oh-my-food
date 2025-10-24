@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as *;
+@use '../base/typography' as *;
+@use '../components/restaurants_cards' as *;
+@use '../components/button' as *;
+@use '../components/operation_cards' as *;
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $grey-bg;
+  padding: 30px 20px 50px 20px;
+}
+
+.intro-section p {
+  font-weight: 300;
+  font-size: $h2-size;
+  color: $grey;
+}
+
+.operation-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.operation-section h2 {
+  text-align: left;
+  margin: 50px 0 30px 20px;
+  font-size: $h1-size;
+}
+
+.restaurants-section {
+  display: flex;
+  flex-direction: column;
+  background-color: $grey-bg;
+  padding-bottom: 50px;
+}
+
+.restaurants-section h2 {
+  text-align: left;
+  margin: 50px 0 0 20px;
+  font-size: $h1-size;
+}
