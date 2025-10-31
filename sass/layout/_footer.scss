@@ -29,3 +29,14 @@ footer a i {
   width: 11px;
   text-align: center;
 }
+
+//----- Responsive Design
+
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+  }
+
+}

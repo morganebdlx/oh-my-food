@@ -102,6 +102,13 @@ footer a i {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+  }
+}
 .restaurants_cards {
   display: flex;
   flex-direction: column;
@@ -242,6 +249,29 @@ button {
   text-align: left;
   margin: 50px 0 0 20px;
   font-size: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .intro-section h1 {
+    font-size: 40px;
+  }
+  .operation-section h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .operation_cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .restaurants-section h2 {
+    display: flex;
+  }
+  .restaurants-section .restaurants_cards_container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
