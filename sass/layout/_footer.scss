@@ -5,27 +5,65 @@ footer {
   background-color: $grey;
   color: white;
   padding: 22px 25px;
-}
-
-footer a {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  cursor: pointer;
-  margin-bottom: 8px;
+  flex-direction: column;
+  gap: 10px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      gap: 0;
+    }
+
+    h2 {
+      font-family: $font-secondary;
+      font-size: $h2-size;
+      margin: 0;
+      margin-bottom: 14px;
+    }
+
+    a i {
+      margin-right: 20px;
+      width: 11px;
+      text-align: center;
+    }
 }
 
-footer h2 {
-  font-family: $font-secondary;
-  font-size: $h2-size;
-  margin-bottom: 14px;
+.footer-logo, .social-media{
+  margin : 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-footer a i {
-  margin-right: 20px;
-  width: 11px;
-  text-align: center;
+//----- Responsive Design
+
+@media screen and (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+
+      h2 {
+        margin: 0;
+        align-self: center;
+      }
+    }
+    
+    .footer-logo {
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .social-media{
+      flex-direction: row;
+      align-items: center;
+      gap: 40px
+    }
 }
