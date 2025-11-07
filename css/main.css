@@ -135,18 +135,31 @@ footer a i {
   border-radius: 2px;
 }
 
-.restaurants_cards i {
+.restaurants_cards svg {
   position: absolute;
   bottom: 25px;
   right: 20px;
-  font-size: 22px;
+  width: 22px;
   cursor: pointer;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 45;
   transition: all 0.3s ease;
 }
-.restaurants_cards i:hover {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+.restaurants_cards svg:hover {
+  animation: color-change-2x 2s reverse forwards;
 }
 
+@keyframes color-change-2x {
+  0% {
+    fill: #19dcea;
+    stroke: #19dcea;
+  }
+  100% {
+    fill: #b22cff;
+    stroke: #b22cff;
+  }
+}
 .restaurants_cards h3 {
   font-weight: 700;
   margin: 20px 0 0 20px;
@@ -188,10 +201,14 @@ button:hover {
   position: relative;
 }
 
-.operation_cards i {
+.fa-solid {
   font-size: 20px;
   color: #7E7E7E;
   margin: 20px;
+}
+
+.i-primary {
+  color: #9356DC;
 }
 
 .operation_cards h2 {
