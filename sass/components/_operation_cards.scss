@@ -10,6 +10,10 @@
   background-color: $grey-bg;
   padding-left: 8px;
   position: relative;
+
+    h2 {
+      font-weight: 500;
+  }
 }
 
 .fa-solid {
@@ -22,10 +26,6 @@
   color: $primary-color;
 }
 
-.operation_cards h2 {
-  display: inline;
-  font-weight: 500;
-}
 
 .operation-num {
   position: absolute;
@@ -39,4 +39,22 @@
   line-height: 24px;
   top: 20px;
   left: -12px;
+}
+
+
+//--------- Responsive Desktop
+
+@media screen and (min-width: 1024px) {
+  .operation_cards-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .operation-section {
+    h2 {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
 }
