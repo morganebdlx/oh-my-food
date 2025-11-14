@@ -41,11 +41,15 @@
 
 .restaurants-section h2 {
   text-align: left;
-  margin: 50px 0 0 20px;
+  margin: 50px 0 20px 20px;
   font-size: $h1-size;
 }
 
-
+.operation-section,
+.restaurants-section {
+  max-width: 1400px;
+  margin: 50px auto;
+}
 
 // ----- Responsive Design
 
@@ -61,7 +65,8 @@
   .operation-section {
     h2 {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
+      margin-left: 100px;
     }
   }
 
@@ -75,7 +80,8 @@
   .restaurants-section {
     h2 {
       display: flex;
-
+      justify-content: flex-start;
+      margin-left: 150px;
     }
 
     .restaurants_cards_container {

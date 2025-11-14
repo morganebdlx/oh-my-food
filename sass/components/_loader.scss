@@ -92,7 +92,7 @@ section.loader {
   align-items: center;
   background-color: transparent;
   z-index: 1000;
-  animation: hideLoader 6s forwards;
+  animation: hideLoader 3s forwards;
 }
 
 @keyframes hideLoader {
@@ -114,7 +114,7 @@ section.loader {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.6s ease;
-  animation: showContent 0.6s 6s forwards;
+  animation: showContent 0.6s 3s forwards;
 }
 
 @keyframes showContent {
