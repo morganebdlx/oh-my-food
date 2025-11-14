@@ -147,11 +147,17 @@ footer a i {
   object-fit: cover;
 }
 .restaurants_cards h3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   font-weight: 700;
   margin: 20px 0 0 20px;
   font-size: 18px;
 }
 .restaurants_cards p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   font-weight: 300;
   margin: 0 0 20px 20px;
   font-size: 18px;
