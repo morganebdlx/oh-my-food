@@ -73,6 +73,14 @@ header {
   margin-right: 15px;
 }
 
+.back-button {
+  position: absolute;
+  left: 20px;
+  font-size: 24px;
+  color: #353535;
+  cursor: pointer;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -98,7 +106,7 @@ footer h2 {
   margin-bottom: 14px;
 }
 footer a i {
-  margin-right: 20px;
+  margin: 0 20px 0 0 !important;
   width: 11px;
   text-align: center;
 }
@@ -150,6 +158,10 @@ footer a i {
   font-weight: 700;
   margin: 20px 0 0 20px;
   font-size: 18px;
+}
+.restaurants_cards h3 a {
+  text-decoration: none;
+  color: black;
 }
 .restaurants_cards p {
   font-weight: 300;
