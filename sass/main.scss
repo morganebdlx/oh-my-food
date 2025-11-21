@@ -8,9 +8,11 @@
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/home';
+@use 'layout/restaurants';
 
 // components
 @use 'components/button';
 @use 'components/restaurants_cards';
 @use 'components/operation_cards';
 @use 'components/loader';
+@use 'components/menu_cards';
