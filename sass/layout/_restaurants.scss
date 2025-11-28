@@ -1,46 +1,58 @@
 @use '../abstracts/variables' as *;
 @use '../base/typography' as *;
 
+
+.nav {
+  position: relative;
+  z-index: 10;
+}
+
+.restaurant-header img {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  display: block;
+}
+
 .main-menu {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 0 40px 0;
   background-color: $grey-bg;
 
-  img {
-    width: 100%;
-    position: relative;
-    z-index: 0;
-    display: block;
-  }
-
   h2 {
     font-weight: 300;
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    text-align: left;
     padding: 20px 0 0 20px;
+    max-width: 635px;
+  }
+
+  hr {
+    border: none;
+    border-top: 3px solid $terciary-color;
+    width: 40px;
+    margin: 5px 0 0 20px;
+    max-width: 635px;
   }
 }
 
-hr {
-  border: none;
-  border-top: 3px solid $terciary-color;
-  width: 40px;
-  margin: 5px 0 0 20px;
+header {
+  width: 100%;
+  display: block;
 }
 
 .restaurant-title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 10px;
   background-color: $grey-bg;
   margin-top: -40px;
   padding: 30px 20px 0 20px;
   position: relative;
-  z-index: 2;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 
@@ -72,6 +84,60 @@ hr {
       100% {
         fill: #b22cff;
         stroke: #b22cff;
+      }
+  }
+}
+
+// RESPONSIVE
+
+@media (min-width: 1024px) {
+  .restaurant-header img {
+    width: 100%;
+    height: 382px;
+    object-fit: cover;
+    display: block;
+  }
+
+
+  .main-menu {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .restaurant-title {
+    justify-content: center;
+    position: relative;
+
+      h1 {
+        text-align: center;
+        width: 100%;
+      }
+
+      svg {
+        position: absolute;
+        right: 350px;
+        top: 70%;
+        transform: translateY(-50%);
+      }
+  }
+
+  .menu-section {
+    max-width: 635px;
+    margin: 50px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+      h2 {
+        max-width: 100%;
+        margin: 20px 0 8px;
+        padding: 0;
+        text-align: left;
+      }
+
+      hr {
+        max-width: 100%;
+        margin: 0 0 18px 0;
+        padding: 0;
       }
   }
 }

@@ -363,44 +363,55 @@ button:hover {
     flex-direction: row;
   }
 }
+.nav {
+  position: relative;
+  z-index: 10;
+}
+
+.restaurant-header img {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  display: block;
+}
+
 .main-menu {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 0 40px 0;
   background-color: #F6F6F6;
 }
-.main-menu img {
-  width: 100%;
-  position: relative;
-  z-index: 0;
-  display: block;
-}
 .main-menu h2 {
   font-weight: 300;
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  text-align: left;
   padding: 20px 0 0 20px;
+  max-width: 635px;
 }
-
-hr {
+.main-menu hr {
   border: none;
   border-top: 3px solid #99E2D0;
   width: 40px;
   margin: 5px 0 0 20px;
+  max-width: 635px;
+}
+
+header {
+  width: 100%;
+  display: block;
 }
 
 .restaurant-title {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 10px;
   background-color: #F6F6F6;
   margin-top: -40px;
   padding: 30px 20px 0 20px;
   position: relative;
-  z-index: 2;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
@@ -430,6 +441,49 @@ hr {
   }
 }
 
+@media (min-width: 1024px) {
+  .restaurant-header img {
+    width: 100%;
+    height: 382px;
+    object-fit: cover;
+    display: block;
+  }
+  .main-menu {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .restaurant-title {
+    justify-content: center;
+    position: relative;
+  }
+  .restaurant-title h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .restaurant-title svg {
+    position: absolute;
+    right: 350px;
+    top: 70%;
+    transform: translateY(-50%);
+  }
+  .menu-section {
+    max-width: 635px;
+    margin: 50px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .menu-section h2 {
+    max-width: 100%;
+    margin: 20px 0 8px;
+    padding: 0;
+    text-align: left;
+  }
+  .menu-section hr {
+    max-width: 100%;
+    margin: 0 0 18px 0;
+    padding: 0;
+  }
+}
 body, html {
   height: 100%;
   margin: 0;
@@ -545,10 +599,8 @@ section.loader {
   height: 72px;
   margin: 15px;
   background-color: white;
-  position: relative;
   display: flex;
   align-items: center;
-  min-width: 0;
   overflow: hidden;
   padding: 0 0 0 15px;
   opacity: 0;
@@ -556,13 +608,10 @@ section.loader {
   animation: fadeSlideIn 0.6s ease forwards;
 }
 .menu_cards:hover .menu-info {
-  width: calc(100% - 0px);
+  width: calc(100% - 60px);
 }
 .menu_cards:hover .circle-check {
   transform: translateX(0);
-}
-.menu_cards:hover .price {
-  margin-right: 70px;
 }
 
 .menu-info {
@@ -618,12 +667,13 @@ section.loader {
   }
 }
 .menu-text {
-  flex: 1 1 auto;
+  flex: 1;
   min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-right: 12px;
+  width: auto;
 }
 .menu-text h3 {
   font-weight: 500;
@@ -637,18 +687,17 @@ section.loader {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0;
+  text-align: left;
+  display: block;
+  width: 100%;
 }
 
 .price {
-  flex: 0 0 auto;
-  margin-left: auto;
   margin-right: 10px;
   font-weight: 700;
   font-size: 15px;
   z-index: 2;
-  transition: margin-right 0.35s ease;
-  white-space: nowrap;
+  transition: transform 0.4s ease;
 }
 
 .circle-check {
@@ -663,10 +712,19 @@ section.loader {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 3;
 }
 .circle-check i {
   color: white;
   font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .menu_cards {
+    max-width: 635px;
+    width: 100%;
+    margin: 20px auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
