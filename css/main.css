@@ -543,25 +543,33 @@ section.loader {
 .menu_cards {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 20px;
-  width: 100%;
-  max-width: 349px;
   height: 72px;
-  margin: 15px 0;
+  margin: 15px;
   background-color: white;
   position: relative;
   display: flex;
   align-items: center;
+  min-width: 0;
   overflow: hidden;
   padding: 0 0 0 15px;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeSlideIn 0.6s ease forwards;
 }
+.menu_cards:hover .menu-info {
+  width: calc(100% - 0px);
+}
 .menu_cards:hover .circle-check {
   transform: translateX(0);
 }
 .menu_cards:hover .price {
-  transform: translateX(-60px);
+  margin-right: 70px;
+}
+
+.menu-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .menu_cards:nth-child(1) {
@@ -611,12 +619,12 @@ section.loader {
   }
 }
 .menu-text {
-  flex: 1;
+  flex: 1 1 auto;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50px;
-  padding-right: 0;
+  padding-right: 12px;
 }
 .menu-text h3 {
   font-weight: 500;
@@ -630,14 +638,18 @@ section.loader {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0;
 }
 
 .price {
+  flex: 0 0 auto;
+  margin-left: auto;
   margin-right: 10px;
   font-weight: 700;
   font-size: 15px;
   z-index: 2;
-  transition: transform 0.4s ease;
+  transition: margin-right 0.35s ease;
+  white-space: nowrap;
 }
 
 .circle-check {
