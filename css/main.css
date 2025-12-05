@@ -202,17 +202,17 @@ footer a i {
   transition: all 0.3s ease;
 }
 .restaurants_cards svg:hover {
-  animation: color-change-2x 2s reverse forwards;
+  animation: color-change-2x 2s forwards;
 }
 
 @keyframes color-change-2x {
   0% {
-    fill: #19dcea;
-    stroke: #19dcea;
+    fill: #9356DC;
+    stroke: #9356DC;
   }
   100% {
-    fill: #b22cff;
-    stroke: #b22cff;
+    fill: #FF79DA;
+    stroke: #FF79DA;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -474,16 +474,16 @@ header {
   transition: all 0.3s ease;
 }
 .restaurant-title svg:hover {
-  animation: color-change-2x 2s reverse forwards;
+  animation: color-change-2x 2s forwards;
 }
 @keyframes color-change-2x {
   0% {
-    fill: #19dcea;
-    stroke: #19dcea;
+    fill: #9356DC;
+    stroke: #9356DC;
   }
   100% {
-    fill: #b22cff;
-    stroke: #b22cff;
+    fill: #FF79DA;
+    stroke: #FF79DA;
   }
 }
 

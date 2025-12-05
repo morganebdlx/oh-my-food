@@ -71,20 +71,20 @@ header {
       stroke-width: 45;
       transition: all 0.3s ease;
 
-      &:hover {
-        animation: color-change-2x 2s reverse forwards;
-      }
+     &:hover {
+    animation: color-change-2x 2s forwards;
   }
+}
 
-  @keyframes color-change-2x {
-      0% {
-        fill: #19dcea;
-        stroke: #19dcea;
-      }
-      100% {
-        fill: #b22cff;
-        stroke: #b22cff;
-      }
+@keyframes color-change-2x {
+    0% {
+      fill: #9356DC;
+      stroke: #9356DC;
+    }
+    100% {
+      fill: #FF79DA;
+      stroke: #FF79DA;
+    }
   }
 }
 
