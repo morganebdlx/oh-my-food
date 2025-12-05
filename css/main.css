@@ -243,6 +243,13 @@ button:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
 
+.operation_cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .operation_cards {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 20px;
@@ -250,8 +257,10 @@ button:hover {
   height: 72px;
   margin: 10px 20px 10px 30px;
   background-color: #F6F6F6;
-  padding-left: 8px;
+  padding: 8px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .operation_cards h2 {
   font-weight: 500;
@@ -281,10 +290,21 @@ button:hover {
   left: -12px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .operation_cards-container {
+    display: flex;
+    justify-content: center;
+  }
+  .operation-section h2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
 @media screen and (min-width: 1024px) {
   .operation_cards-container {
     display: flex;
     justify-content: center;
+    flex-direction: row;
   }
   .operation-section h2 {
     display: flex;
@@ -310,6 +330,7 @@ button:hover {
 .operation-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -334,10 +355,35 @@ button:hover {
 
 .operation-section,
 .restaurants-section {
-  max-width: 1400px;
+  max-width: 100%;
   margin: 50px auto;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro-section h1 {
+    font-size: 36px;
+  }
+  .operation-section h2 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+  .operation_cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .restaurants-section h2 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+  .restaurants-section .restaurants_cards_container {
+    display: flex;
+    flex-direction: row;
+  }
+}
 @media screen and (min-width: 1024px) {
   .intro-section h1 {
     font-size: 40px;
@@ -345,7 +391,7 @@ button:hover {
   .operation-section h2 {
     display: flex;
     justify-content: flex-start;
-    margin-left: 100px;
+    margin-left: 150px;
   }
   .operation_cards_container {
     display: flex;
