@@ -23,6 +23,7 @@
 .operation-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -47,11 +48,49 @@
 
 .operation-section,
 .restaurants-section {
-  max-width: 1400px;
+  max-width: 100%;
   margin: 50px auto;
 }
 
 // ----- Responsive Design
+
+// Tablets and medium screens
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro-section {
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  .operation-section {
+    h2 {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 50px;
+    }
+  }
+
+  .operation_cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .restaurants-section {
+    h2 {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 50px;
+    }
+
+    .restaurants_cards_container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
 
 // Desktop and larger screens
 
@@ -66,7 +105,7 @@
     h2 {
       display: flex;
       justify-content: flex-start;
-      margin-left: 100px;
+      margin-left: 150px;
     }
   }
 
