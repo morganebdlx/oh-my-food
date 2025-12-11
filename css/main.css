@@ -161,10 +161,6 @@ footer a i {
   margin: 20px 0 0 20px;
   font-size: 18px;
 }
-.restaurants_cards h3 a {
-  text-decoration: none;
-  color: black;
-}
 .restaurants_cards p {
   display: flex;
   align-items: center;
@@ -172,6 +168,12 @@ footer a i {
   font-weight: 300;
   margin: 0 0 20px 20px;
   font-size: 18px;
+}
+
+.restaurants_cards-1 a,
+.restaurants_cards-2 a {
+  text-decoration: none;
+  color: black;
 }
 
 .new-restaurant {
@@ -217,8 +219,8 @@ footer a i {
 }
 @media screen and (min-width: 1024px) {
   .restaurants_cards {
-    width: 490px;
-    margin: 15px;
+    width: 500px;
+    margin: 35px;
   }
   .restaurants_cards-1, .restaurants_cards-2 {
     display: flex;
@@ -286,7 +288,7 @@ button:hover {
   height: 24px;
   text-align: center;
   line-height: 24px;
-  top: 20px;
+  top: 30px;
   left: -12px;
 }
 
@@ -320,20 +322,24 @@ button:hover {
   background-color: #F6F6F6;
   padding: 30px 20px 50px 20px;
 }
-
 .intro-section p {
   font-weight: 300;
   font-size: 18px;
   color: #353535;
 }
 
-.operation-section {
+.operation-section,
+.restaurants-section {
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
+}
+
+.operation-section {
   justify-content: center;
   margin-bottom: 50px;
 }
-
 .operation-section h2 {
   text-align: left;
   margin: 50px 0 30px 20px;
@@ -341,22 +347,13 @@ button:hover {
 }
 
 .restaurants-section {
-  display: flex;
-  flex-direction: column;
   background-color: #F6F6F6;
   padding-bottom: 50px;
 }
-
 .restaurants-section h2 {
   text-align: left;
-  margin: 50px 0 20px 20px;
+  margin: 50px 0 30px 20px;
   font-size: 24px;
-}
-
-.operation-section,
-.restaurants-section {
-  max-width: 100%;
-  margin: 50px auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -377,7 +374,6 @@ button:hover {
   .restaurants-section h2 {
     display: flex;
     justify-content: flex-start;
-    margin-left: 50px;
   }
   .restaurants-section .restaurants_cards_container {
     display: flex;
@@ -391,7 +387,6 @@ button:hover {
   .operation-section h2 {
     display: flex;
     justify-content: flex-start;
-    margin-left: 150px;
   }
   .operation_cards_container {
     display: flex;
@@ -402,11 +397,14 @@ button:hover {
   .restaurants-section h2 {
     display: flex;
     justify-content: flex-start;
-    margin-left: 150px;
   }
   .restaurants-section .restaurants_cards_container {
     display: flex;
     flex-direction: row;
+  }
+  .operation-section,
+  .restaurants-section {
+    padding: 0 150px;
   }
 }
 .nav {
