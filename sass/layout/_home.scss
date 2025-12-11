@@ -12,44 +12,42 @@
   text-align: center;
   background-color: $grey-bg;
   padding: 30px 20px 50px 20px;
-}
 
-.intro-section p {
-  font-weight: 300;
-  font-size: $h2-size;
-  color: $grey;
-}
-
-.operation-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.operation-section h2 {
-  text-align: left;
-  margin: 50px 0 30px 20px;
-  font-size: $h1-size;
-}
-
-.restaurants-section {
-  display: flex;
-  flex-direction: column;
-  background-color: $grey-bg;
-  padding-bottom: 50px;
-}
-
-.restaurants-section h2 {
-  text-align: left;
-  margin: 50px 0 20px 20px;
-  font-size: $h1-size;
+    p {
+    font-weight: 300;
+    font-size: $h2-size;
+    color: $grey;
+  }
 }
 
 .operation-section,
 .restaurants-section {
-  max-width: 100%;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.operation-section {
+  justify-content: center;
+  margin-bottom: 50px;
+
+    h2 {
+    text-align: left;
+    margin: 50px 0 30px 20px;
+    font-size: $h1-size;
+  }
+}
+
+.restaurants-section {
+  background-color: $grey-bg;
+  padding-bottom: 50px;
+
+    h2 {
+    text-align: left;
+    margin: 50px 0 30px 20px;
+    font-size: $h1-size;
+  }
 }
 
 // ----- Responsive Design
@@ -82,7 +80,6 @@
     h2 {
       display: flex;
       justify-content: flex-start;
-      margin-left: 50px;
     }
 
     .restaurants_cards_container {
@@ -105,7 +102,6 @@
     h2 {
       display: flex;
       justify-content: flex-start;
-      margin-left: 150px;
     }
   }
 
@@ -120,12 +116,16 @@
     h2 {
       display: flex;
       justify-content: flex-start;
-      margin-left: 150px;
     }
 
     .restaurants_cards_container {
       display: flex;
       flex-direction: row;
     }
+  }
+
+  .operation-section,
+  .restaurants-section {
+    padding: 0 150px;
   }
 }
