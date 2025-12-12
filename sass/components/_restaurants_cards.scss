@@ -11,6 +11,7 @@
 
     img {
       width: 100%;
+      min-width: 100%;
       height: 231px;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
@@ -86,17 +87,36 @@
     stroke: #FF79DA;
   }
 }
+// RESPONSIVE DESIGN
+
+//------- Responsive Tablet
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .restaurants_cards {
+    width: 340px;
+    margin: 10px 15px;
+  }
+
+  .restaurants_cards-1,
+  .restaurants_cards-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+}
 
 //------- Responsive Desktop
 
 @media screen and (min-width: 1024px) {
   .restaurants_cards {
-    width: 500px;
-    margin: 35px;
+    width: 490px;
+    margin: 35px 15px;
   }
 
   .restaurants_cards-1, .restaurants_cards-2 {
     display: flex;
     justify-content: center;
+    gap: 30px;
   }
 }

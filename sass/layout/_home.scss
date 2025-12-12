@@ -65,13 +65,18 @@
     h2 {
       display: flex;
       justify-content: flex-start;
-      margin-left: 50px;
+      max-width: 768px;
+      padding-left: 0;
     }
+  }
+
+  .operation_cards-container {
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   .operation_cards_container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
@@ -80,12 +85,25 @@
     h2 {
       display: flex;
       justify-content: flex-start;
+      max-width: 768px;
+      padding-left: 0;
     }
 
     .restaurants_cards_container {
       display: flex;
       flex-direction: row;
     }
+  }
+
+  .restaurants_cards-1,
+  .restaurants_cards-2 {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .operation-section,
+  .restaurants-section {
+    padding: 0 50px;
   }
 }
 
@@ -102,26 +120,37 @@
     h2 {
       display: flex;
       justify-content: flex-start;
+      max-width: 1070px;
+      padding-left: 0;
     }
   }
 
   .operation_cards_container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 1070px;
+    margin: 0 auto;
   }
 
   .restaurants-section {
     h2 {
       display: flex;
       justify-content: flex-start;
+      max-width: 1070px;
+      padding-left: 0;
     }
 
     .restaurants_cards_container {
       display: flex;
       flex-direction: row;
     }
+  }
+
+  .restaurants_cards-1,
+  .restaurants_cards-2 {
+    max-width: 1070px;
+    margin: 0 auto;
   }
 
   .operation-section,
